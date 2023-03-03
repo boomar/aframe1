@@ -10,6 +10,15 @@
    <a-scene>
       <a-sky color="#DDDDDD"></a-sky>
       <a-box color="#0095DD" position="0 1 0" rotation="20 40 0"></a-box>
+          <a-animation
+          attribute="rotation"
+          from="20 0 0"
+          to="20 360 0"
+          direction="alternate"
+          dur="4000"
+          repeat="indefinite"
+          easing="ease">
+          </a-animation>
        
      <a-entity
   geometry="
