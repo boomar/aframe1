@@ -16,8 +16,10 @@
     <!--Queue-->
       <a-entity position="50 -20 -140">
       <a-image src="images/queue.png" scale = "0.15 0.15 0" width="699" height="578" rotation="0 -90 0" transparent="true" alpha-test="0.5"></a-image>
-      <a-sound src="url(images/hancock.mp3)" autoplay="true" position="0 0 0" loop="true" volume="0.5"></a-sound>
       </a-entity>
+    
+    <!--Queue sound -->
+      <a-entity id="river" geometry="primitive: plane" material="color: blue" position="-50 -20 -140" sound="src: url(images/hancock.mp3); autoplay: true"></a-entity>
    
     <!--Sign-->
       <a-entity position="20 -10 -130">
