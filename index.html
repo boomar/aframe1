@@ -2,6 +2,15 @@
 <html lang="en-US">
   <head>
   <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+    
+    <script
+      document.addEventListener("click", () => {
+      sound = document.querySelector("[sound]")
+      sound.components.sound.stopSound();
+      sound.components.sound.playSound();
+    })
+    </script>
+    
   </head>
 
 <body>
@@ -23,7 +32,7 @@
       </a-entity>
     
     <!--Queue sound -->
-    <a-entity position="0 0 0" sound="src: #queue; autoplay: true"></a-entity>
+    <a-entity position="50 -20 -140" sound="src: #queue; autoplay: true"></a-entity>
    
     <!--Sign-->
       <a-entity position="20 -10 -130">
