@@ -22,6 +22,7 @@
     <audio id="wine_clink" src="images/wine_clink.mp3" preload="auto"></audio>
     <audio id="sunak" src="images/sunak.mp3" preload="auto"></audio>
     <audio id="cough" src="images/cough.mp3" preload="auto"></audio>
+    <audio id="2wave" src="images/second_wave.mp3" preload="auto"></audio>
     </a-assets>
     
     <!-- Camera -->
@@ -57,7 +58,7 @@
       </a-entity>
     
     <!--Ambulances & hospital-->
-      <a-entity position="-50 10 60">
+      <a-entity position="-50 10 60" sound="src: #2wave; on: click; volume: 50; refDistance: 1; rolloffFactor: 1">
       <a-image src="images/hospital_ambulances.png" scale = "0.1 0.1 0.1" width="1128" height="595" rotation="0 -170 0" transparent="true" alpha-test="0.5"></a-image>
       </a-entity>
     
