@@ -21,6 +21,11 @@
     <audio id="queue" src="images/queue.mp3" preload="auto"></audio>
     <audio id="wine_clink" src="images/wine_clink.mp3" preload="auto"></audio>
     </a-assets>
+    
+    <!-- Camera -->
+    <a-camera>
+   
+    </a-camera>
       
     <!--Wall-->
       <a-entity position="100 -20 -50">
@@ -28,7 +33,7 @@
       </a-entity>
     
     <!--Queue-->
-      <a-entity position="50 -20 -140" sound="src: #queue; autoplay: true">
+      <a-entity position="50 -20 -140" sound="src: #queue; on: click">
       <a-image src="images/queue.png" scale = "0.15 0.15 0" width="699" height="578" rotation="0 -90 0" transparent="true" alpha-test="0.5"></a-image>
       </a-entity>
    
@@ -43,7 +48,7 @@
       </a-entity>
     
     <!--Diners sound - wine clink -->
-    <a-entity position="55 -30 0" sound="src: #wine_clink; autoplay: true"></a-entity>
+    <a-entity position="55 -30 0" sound="src: #wine_clink; on: click"></a-entity>
     
     <!--Sunak-->
       <a-entity position="55 -40 70">
