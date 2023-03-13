@@ -23,9 +23,11 @@
     </a-assets>
     
     <!-- Camera -->
-    <a-camera>
-   
-    </a-camera>
+    <a-entity position="0 0 7">
+      <a-camera>
+      <a-cursor>‹/a-cursor> 
+      </a-camera>
+    </a-entity>
       
     <!--Wall-->
       <a-entity position="100 -20 -50">
@@ -33,7 +35,7 @@
       </a-entity>
     
     <!--Queue-->
-      <a-entity position="50 -20 -140" sound="src: #queue; on: click">
+      <a-entity position="50 -20 -140" sound="src: #queue; on: click"; volume: 1; refDistance: 4; rolloffFactor: 1">
       <a-image src="images/queue.png" scale = "0.15 0.15 0" width="699" height="578" rotation="0 -90 0" transparent="true" alpha-test="0.5"></a-image>
       </a-entity>
    
