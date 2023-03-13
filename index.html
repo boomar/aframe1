@@ -20,6 +20,7 @@
     <a-assets>
     <audio id="queue" src="images/queue.mp3" preload="auto"></audio>
     <audio id="wine_clink" src="images/wine_clink.mp3" preload="auto"></audio>
+      <audio id="sunak" src="images/sunak.mp3" preload="auto"></audio>
     </a-assets>
     
     <!-- Camera -->
@@ -50,7 +51,7 @@
       </a-entity>
     
     <!--Sunak-->
-      <a-entity position="55 -40 70">
+      <a-entity position="55 -40 70" sound="src: #sunak; on: click; volume: 50; refDistance: 1; rolloffFactor: 1">
       <a-image src="images/sunak.png" scale = "0.2 0.2 0" width="554" height="1154" rotation="0 -90 0" transparent="true" alpha-test="0.5"></a-image>
       </a-entity>
     
