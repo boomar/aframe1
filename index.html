@@ -19,6 +19,7 @@
     
     <a-assets>
     <audio id="queue" src="images/queue.mp3" preload="auto"></audio>
+    <audio id="wine_clink" src="images/wine_clink.mp3" preload="auto"></audio>
     </a-assets>
       
     <!--Wall-->
@@ -43,6 +44,9 @@
       <a-entity position="55 -30 -20">
       <a-image src="images/diners.png" scale = "0.15 0.15 0" width="794" height="466" rotation="0 -90 0" transparent="true" alpha-test="0.5"></a-image>
       </a-entity>
+    
+    <!--Diners sound - wine clink -->
+    <a-entity position="0 0 0" sound="src: #wine_clink; autoplay: true"></a-entity>
     
     <!--Sunak-->
       <a-entity position="55 -40 70">
